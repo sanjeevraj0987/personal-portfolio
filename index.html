@@ -1,0 +1,430 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio | SANJEEV RAJ T</title>
+    <meta name="description"
+        content="Portfolio of a passionate Full stack developer. View my projects, skills, and resume.">
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
+        rel="stylesheet">
+    <!-- CSS -->
+    <link rel="stylesheet" href="./style.css">
+    <!-- Font Awesome for Icons (using CDN for simplicity) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Background Animation Container -->
+    <div id="space-background"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo"><span>Sanjeev Raj T</span></a>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#certifications">Certifications</a></li>
+                <li><a href="#contact" class="btn-primary">Contact Me</a></li>
+                <li>
+                    <div class="theme-toggle" id="theme-toggle">
+                        <i class="fa-solid fa-moon"></i>
+                    </div>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <div class="line"></div>
+                <div class="line"></div>
+                <div class="line"></div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="hero" class="hero">
+        <div class="container hero-container">
+            <div class="hero-content fade-in-up">
+                <span class="greeting">Hello, I'm</span>
+                <h1 class="name">Sanjeev Raj T</h1>
+                <h2 class="role">I'm a <span class="typing-text"></span></h2>
+                <p class="tagline">Building modern, user-centric web experiences with a passion for learning and
+                    innovation.</p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn-primary">View Projects</a>
+                    <a href="#contact" class="btn-secondary">Contact Me</a>
+                </div>
+            </div>
+            <div class="hero-image fade-in-up delay-200">
+                <!-- Replace with your actual image path or a generated placeholder -->
+                <div class="avatar">
+                    <img src="images/images.jpeg" alt="Sanjeev Raj">
+                </div>
+            </div>
+        </div>
+        <a href="#about" class="scroll-down">
+            <i class="fa-solid fa-arrow-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">Get to know me better</p>
+            </div>
+
+            <div class="bento-grid fade-in-up">
+                <!-- Bio Card -->
+                <div class="bento-card bio-card">
+                    <h3>Who I Am</h3>
+                    <p>I am a motivated Computer Science and Engineering student at Saveetha Engineering College with a
+                        deep interest in software development and innovation.</p>
+                    <p>My journey involves hands-on experience with Python, Java, and Full Stack technologies. I love
+                        solving complex problems and building user-centric web experiences.</p>
+                </div>
+
+                <!-- Stats Card Removed as per request -->
+
+                <!-- Connect Card -->
+                <div class="bento-card connect-card">
+                    <h3>Let's Connect</h3>
+                    <div class="connect-links">
+                        <a href="https://www.linkedin.com/in/sanjeev-rajt/" target="_blank"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href="https://github.com/sanjeevraj0987" target="_blank"><i
+                                class="fa-brands fa-github"></i></a>
+                        <a href="sanjeevtamilselvan939@gmail.com"><i class="fa-solid fa-envelope"></i></a>
+                    </div>
+                </div>
+
+                <!-- Resume Card -->
+                <div class="bento-card resume-card">
+                    <i class="fa-solid fa-file-arrow-down icon-large"></i>
+                    <div>
+                        <h3>Resume</h3>
+                        <a href="https://drive.google.com/file/d/1CStM2d_9V9QHg8m-H0ZXUwAMH5IEF8wT/view?usp=sharing"
+                            class="btn-text">Download CV <i class="fa-solid fa-arrow-right"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section bg-alt">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Core Skills</h2>
+                <p class="section-subtitle">My technical and soft skills</p>
+            </div>
+            <div class="skills-grid">
+                <!-- Technical Skills -->
+                <div class="skills-category fade-in-up">
+                    <h3>Technical Skills</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <i class="fa-brands fa-java"></i>
+                            <span>Java</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-html5"></i>
+                            <span>HTML5</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-css3-alt"></i>
+                            <span>CSS3</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-js"></i>
+                            <span>JavaScript</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-brands fa-envira"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="skill-card">
+                            <i class="fa-solid fa-leaf"></i>
+                            <span>Spring Boot</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- Soft Skills -->
+                <div class="skills-category fade-in-up delay-200">
+                    <h3>Soft Skills</h3>
+                    <div class="skill-tags">
+                        <span class="skill-tag">Problem Solving</span>
+                        <span class="skill-tag">Teamwork</span>
+                        <span class="skill-tag">Communication</span>
+                        <span class="skill-tag">Adaptability</span>
+                        <span class="skill-tag">Time Management</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Education</h2>
+                <p class="section-subtitle">My academic journey</p>
+            </div>
+            <div class="timeline">
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2022 - Present</span>
+                        <h3 class="degree">BE Computer Science and Engineering</h3>
+                        <h4 class="institute">Saveetha Engineering College</h4>
+                        <p>CGPA: 7.9/10</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2020 - 2022</span>
+                        <h3 class="degree">Higher Secondary Education</h3>
+                        <h4 class="institute">Swami Dayananda Matric Hr.Sec School</h4>
+                        <p>Grade: 82%</p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">Completed</span>
+                        <h3 class="degree">Secondary Education</h3>
+                        <h4 class="institute">Swami Dayananda Matric Hr.Sec School</h4>
+                        <p>Percentage: 83%</p>
+                        <p>Built foundational academic skills and discipline during school-level education.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section bg-alt">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Projects</h2>
+                <p class="section-subtitle">Some of my recent work</p>
+            </div>
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <article class="project-card fade-in-up">
+                    <div class="project-image">
+                        <img src="images/crop image.jpg" alt="Crop Disease Prediction">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Crop Disease Prediction</h3>
+                        <p class="project-desc">Developed a deep learning model using CNN to classify crop disease from
+                            leaf images with over 90 percent accuracy.</p>
+                        <div class="project-tech">
+                            <span>Python</span>
+                            <span>TensorFlow</span>
+                            <span>React</span>
+                            <span>CNN</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                                Demo</a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 2 -->
+                <article class="project-card fade-in-up delay-100">
+                    <div class="project-image">
+                        <img src="images/blog image.png" alt="Inscribe AI-Blogging application">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Inscribe AI - Blogging Application</h3>
+                        <p class="project-desc">Intelligent blogging platform developed an AI powered blogging platform
+                            that generates, optimizes and personalises blog content.</p>
+                        <div class="project-tech">
+                            <span>NLP</span>
+                            <span>Machine Learning</span>
+                            <span>React</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                                Demo</a>
+                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Source</a>
+                        </div>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="section bg-alt">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Experience</h2>
+                <p class="section-subtitle">My professional journey</p>
+            </div>
+            <div class="timeline">
+                <!-- Reteck Solution -->
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">1st - 15th Jan 2026</span>
+                        <h3 class="degree">Full Stack Development (Java) - In-plant Training</h3>
+                        <h4 class="institute">Reteck Solution - Tambaram</h4>
+                        <ul
+                            style="list-style-type: disc; margin-left: 1.5rem; color: var(--text-secondary); margin-top: 1rem;">
+                            <li>Gained hands-on experience in full stack application development using Java technologies
+                            </li>
+                            <li>Built backend services using Java and Spring Boot with RESTful APIs</li>
+                            <li>Developed responsive frontend interfaces using HTML, CSS, JavaScript, and React</li>
+                            <li>Worked with MySQL/MongoDB for database design, integration, and CRUD operations</li>
+                        </ul>
+                    </div>
+                </div>
+                <!-- Engineering monk -->
+                <div class="timeline-item fade-in-up delay-100">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">1st - 31st July 2024</span>
+                        <h3 class="degree">Python for Data Analysis - Internship</h3>
+                        <h4 class="institute">Engineering monk - Avadi</h4>
+                        <ul
+                            style="list-style-type: disc; margin-left: 1.5rem; color: var(--text-secondary); margin-top: 1rem;">
+                            <li>Gained hands-on experience in Python programming for data analysis and real-world
+                                datasets</li>
+                            <li>Performed data cleaning, preprocessing, and exploratory data analysis using Pandas and
+                                NumPy</li>
+                            <li>Created meaningful data visualizations using Matplotlib and Seaborn</li>
+                            <li>Worked with Jupyter Notebook to analyze data and derive actionable insights</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certifications Section -->
+    <section id="certifications" class="section">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Certifications</h2>
+                <p class="section-subtitle">Professional milestones</p>
+            </div>
+            <div class="cert-grid">
+                <div class="cert-card fade-in-up">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-certificate"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>AWS-cloud Practitioner</h3>
+                        <p>Coursera</p>
+                        <a href="https://drive.google.com/file/d/1YCW4-ayeMeU1ay2p65MnRbHh_h_-vpT5/view?usp=sharing"
+                            class="btn-small">View Certificate</a>
+                    </div>
+                </div>
+                <div class="cert-card fade-in-up delay-100">
+                    <div class="cert-icon">
+                        <i class="fa-brands fa-google"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Introduction to prompt Engineering</h3>
+                        <p>Simple learn</p>
+                        <a href="https://drive.google.com/file/d/14o-gdfQsJd9BjD80N4UKb51fJqpLK2yl/view?usp=sharing"
+                            class="btn-small">View Certificate</a>
+                    </div>
+                </div>
+                <div class="cert-card fade-in-up delay-200">
+                    <div class="cert-icon">
+                        <i class="fa-brands fa-aws"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Introduction to cybersecurity</h3>
+                        <p>Simple learn</p>
+                        <a href="https://drive.google.com/file/d/1AHL_zF4q6hdKgWa0-Wqe71ThZEdHYgGA/view?usp=sharing"
+                            class="btn-small">View Certificate</a>
+                    </div>
+                </div>
+                <div class="cert-card fade-in-up delay-300">
+                    <div class="cert-icon">
+                        <i class="fa-solid fa-network-wired"></i>
+                    </div>
+                    <div class="cert-info">
+                        <h3>Introduction to IoT</h3>
+                        <p>NPTEL</p>
+                        <a href="https://drive.google.com/file/d/1J8XD6PZQOX87v1IuCrMbu7TWSLuMzAOH/view?usp=sharing"
+                            class="btn-small">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-alt">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <h2 class="section-title">Contact Me</h2>
+                <p class="section-subtitle">Let's work together</p>
+            </div>
+            <div class="contact-content fade-in-up">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <p>sanjeevtamilselvan939@gmail.com</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-linkedin"></i>
+                        <p>https://www.linkedin.com/in/sanjeev-raj-794293308/</p>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fa-brands fa-github"></i>
+                        <p>https://github.com/sanjeevraj0987</p>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2026 Sanjeev Raj T. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./script.js"></script>
+</body>
+
+</html>
