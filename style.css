@@ -1279,6 +1279,225 @@ body.light-mode #space-background {
 }
 
 
+/* Book Themed Contact Section */
+.book-container {
+    perspective: 1500px;
+    display: flex;
+    justify-content: center;
+    padding: 2rem 0;
+}
+
+.book {
+    position: relative;
+    width: 900px;
+    /* Wider book */
+    height: 550px;
+    background-color: #fdfbf7;
+    /* Paper color */
+    box-shadow:
+        0 20px 40px -10px rgba(0, 0, 0, 0.5),
+        /* Drop Shadow */
+        inset 0 0 20px rgba(0, 0, 0, 0.1),
+        /* Inner Shadow to darken edges */
+        inset 30px 0 30px rgba(0, 0, 0, 0.1);
+    /* Spine shadow */
+    border-radius: 5px 20px 20px 5px;
+    display: flex;
+    transform-style: preserve-3d;
+    transition: transform 0.5s;
+    background-image: linear-gradient(to right, #e3e0dc 0%, #fdfbf7 5%, #fdfbf7 95%, #e3e0dc 100%);
+}
+
+.book-page {
+    flex: 1;
+    padding: 3rem;
+    position: relative;
+    z-index: 1;
+}
+
+/* Spine Effect in the middle */
+.book::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+    width: 40px;
+    /* Width of the spine fold */
+    transform: translateX(-50%);
+    background: linear-gradient(to right,
+            rgba(0, 0, 0, 0.05) 0%,
+            rgba(0, 0, 0, 0.15) 35%,
+            rgba(0, 0, 0, 0.1) 50%,
+            rgba(0, 0, 0, 0.15) 65%,
+            rgba(0, 0, 0, 0.05) 100%);
+    z-index: 2;
+    pointer-events: none;
+    border-radius: 2px;
+}
+
+.left-page {
+    border-right: 1px solid rgba(0, 0, 0, 0.05);
+    /* Slight separation line */
+}
+
+/* Page Content Styling */
+.page-content {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.book-page h3 {
+    font-family: 'Cinzel', serif;
+    /* Use a classic serif for book feel, or fallback to Heading font */
+    font-size: 2rem;
+    color: #4a3b2b;
+    /* Dark brownish text */
+    text-align: center;
+    margin-bottom: 0.5rem;
+    position: relative;
+    border-bottom: 2px solid rgba(74, 59, 43, 0.2);
+    padding-bottom: 1rem;
+}
+
+.page-text {
+    color: #5c4d3d;
+    /* Softer text color for paper */
+    font-family: 'Merriweather', serif;
+    /* Or system serif */
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: center;
+    font-style: italic;
+    margin-bottom: 2rem;
+}
+
+/* Contact Info Styling */
+.book-contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.book-contact-item {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    color: #4a3b2b;
+    font-size: 1.1rem;
+}
+
+.book-contact-item i {
+    font-size: 1.5rem;
+    color: #8b5e3c;
+    /* Antique gold/brown accent */
+}
+
+.book-contact-item a {
+    color: #4a3b2b;
+    text-decoration: none;
+    border-bottom: 1px dotted #8b5e3c;
+    transition: color 0.3s;
+}
+
+.book-contact-item a:hover {
+    color: #8b5e3c;
+}
+
+/* Decoration (Feather) */
+.book-decoration {
+    text-align: center;
+    margin-top: auto;
+    color: rgba(139, 94, 60, 0.2);
+    font-size: 5rem;
+    transform: rotate(-15deg);
+}
+
+/* Form Styling - Line Inputs */
+.book-form {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.form-group-line {
+    position: relative;
+}
+
+.form-group-line input,
+.form-group-line textarea {
+    width: 100%;
+    background: transparent;
+    border: none;
+    border-bottom: 2px solid rgba(74, 59, 43, 0.3);
+    padding: 0.5rem 0;
+    font-family: 'Caveat', cursive, var(--font-body);
+    /* Handwriting style if available */
+    font-size: 1.2rem;
+    color: #2c241b;
+    outline: none;
+    transition: border-color 0.3s;
+    resize: none;
+}
+
+.form-group-line input:focus,
+.form-group-line textarea:focus {
+    border-color: #8b5e3c;
+}
+
+/* Placeholder Styling */
+.form-group-line input::placeholder,
+.form-group-line textarea::placeholder {
+    color: rgba(92, 77, 61, 0.5);
+    font-family: var(--font-body);
+    font-size: 1rem;
+    font-style: italic;
+}
+
+/* Button Styling */
+.btn-book {
+    align-self: flex-end;
+    background: none;
+    border: 2px solid #8b5e3c;
+    color: #8b5e3c;
+    padding: 0.8rem 2rem;
+    font-family: var(--font-heading);
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    cursor: pointer;
+    transition: all 0.3s;
+    margin-top: 1rem;
+}
+
+.btn-book:hover {
+    background: #8b5e3c;
+    color: #fdfbf7;
+    box-shadow: 2px 2px 0 rgba(74, 59, 43, 0.2);
+}
+
+/* Responsive Book */
+@media (max-width: 950px) {
+    .book {
+        width: 100%;
+        height: auto;
+        flex-direction: column;
+    }
+
+    .book::before {
+        display: none;
+        /* No spine on mobile vertical stack */
+    }
+
+    .left-page {
+        border-right: none;
+        border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    }
+}
+
 @media (max-width: 768px) {
     .nav-links {
         position: fixed;
