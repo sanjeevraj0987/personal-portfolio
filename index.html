@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Outfit:wght@500;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700&family=Inter:wght@300;400;500;600;700&family=Merriweather:ital,wght@0,300;0,400;0,700;1,400&family=Outfit:wght@500;700&family=Pacifico&display=swap"
         rel="stylesheet">
     <!-- CSS -->
     <link rel="stylesheet" href="./style.css">
@@ -26,7 +26,7 @@
     <!-- Navigation -->
     <nav class="navbar">
         <div class="container nav-container">
-            <a href="#" class="logo"><span>Sanjeev Raj T</span></a>
+            <a href="#" class="logo">Sanjeevv</a>
             <ul class="nav-links">
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
@@ -34,11 +34,6 @@
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#certifications">Certifications</a></li>
                 <li><a href="#contact" class="btn-primary">Contact Me</a></li>
-                <li>
-                    <div class="theme-toggle" id="theme-toggle">
-                        <i class="fa-solid fa-moon"></i>
-                    </div>
-                </li>
             </ul>
             <div class="hamburger">
                 <div class="line"></div>
@@ -51,7 +46,7 @@
     <!-- Hero Section -->
     <section id="hero" class="hero">
         <div class="container hero-container">
-            <div class="hero-content fade-in-up">
+            <div class="hero-content">
                 <span class="greeting">Hello, I'm</span>
                 <h1 class="name">Sanjeev Raj T</h1>
                 <h2 class="role">I'm a <span class="typing-text"></span></h2>
@@ -62,7 +57,7 @@
                     <a href="#contact" class="btn-secondary">Contact Me</a>
                 </div>
             </div>
-            <div class="hero-image fade-in-up delay-200">
+            <div class="hero-image delay-200">
                 <!-- Replace with your actual image path or a generated placeholder -->
                 <div class="avatar">
                     <img src="images/images.jpeg" alt="Sanjeev Raj">
@@ -77,12 +72,12 @@
     <!-- About Section -->
     <section id="about" class="section">
         <div class="container">
-            <div class="section-header fade-in-up">
+            <div class="section-header">
                 <h2 class="section-title">About Me</h2>
                 <p class="section-subtitle">Get to know me better</p>
             </div>
 
-            <div class="bento-grid fade-in-up">
+            <div class="bento-grid">
                 <!-- Bio Card -->
                 <div class="bento-card bio-card">
                     <h3>Who I Am</h3>
@@ -122,58 +117,92 @@
     <!-- Skills Section -->
     <section id="skills" class="section bg-alt">
         <div class="container">
-            <div class="section-header fade-in-up">
+            <div class="section-header">
                 <h2 class="section-title">Core Skills</h2>
-                <p class="section-subtitle">My technical and soft skills</p>
+                <p class="section-subtitle">Technical Skills & Tools</p>
             </div>
             <div class="skills-grid">
                 <!-- Technical Skills -->
-                <div class="skills-category fade-in-up">
+                <div class="skills-category">
                     <h3>Technical Skills</h3>
                     <div class="skill-cards">
                         <div class="skill-card">
                             <i class="fa-brands fa-java"></i>
                             <span>Java</span>
                         </div>
-                        <div class="skill-card">
-                            <i class="fa-solid fa-database"></i>
+                        <div class="skill-card delay-100">
+                            <img src="https://www.vectorlogo.zone/logos/mysql/mysql-official.svg" alt="MySQL"
+                                class="skill-icon-img mysql-logo">
                             <span>MySQL</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card delay-200">
                             <i class="fa-brands fa-react"></i>
                             <span>React</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card delay-300">
                             <i class="fa-brands fa-html5"></i>
                             <span>HTML5</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card delay-400">
                             <i class="fa-brands fa-css3-alt"></i>
                             <span>CSS3</span>
                         </div>
-                        <div class="skill-card">
+                        <div class="skill-card delay-500">
                             <i class="fa-brands fa-js"></i>
                             <span>JavaScript</span>
                         </div>
-                        <div class="skill-card">
-                            <i class="fa-brands fa-envira"></i>
+                        <div class="skill-card delay-600">
+                            <img src="https://www.vectorlogo.zone/logos/mongodb/mongodb-icon.svg" alt="MongoDB"
+                                class="skill-icon-img mongodb-logo">
                             <span>MongoDB</span>
                         </div>
-                        <div class="skill-card">
-                            <i class="fa-solid fa-leaf"></i>
+                        <div class="skill-card delay-700">
+                            <img src="https://www.vectorlogo.zone/logos/springio/springio-icon.svg" alt="Spring Boot"
+                                class="skill-icon-img springboot-logo">
                             <span>Spring Boot</span>
                         </div>
                     </div>
                 </div>
-                <!-- Soft Skills -->
-                <div class="skills-category fade-in-up delay-200">
-                    <h3>Soft Skills</h3>
-                    <div class="skill-tags">
-                        <span class="skill-tag">Problem Solving</span>
-                        <span class="skill-tag">Teamwork</span>
-                        <span class="skill-tag">Communication</span>
-                        <span class="skill-tag">Adaptability</span>
-                        <span class="skill-tag">Time Management</span>
+                <!-- Tools -->
+                <div class="skills-category delay-200">
+                    <h3>Tools</h3>
+                    <div class="skill-cards">
+                        <div class="skill-card">
+                            <i class="fa-brands fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                        <div class="skill-card delay-100">
+                            <i class="fa-brands fa-github"></i>
+                            <span>GitHub</span>
+                        </div>
+                        <div class="skill-card delay-200">
+                            <i class="fa-solid fa-code"></i>
+                            <span>VS Code</span>
+                        </div>
+                        <div class="skill-card delay-300">
+                            <i class="fa-solid fa-leaf mongo-icon"></i>
+                            <span>MongoDB Compass</span>
+                        </div>
+                        <div class="skill-card delay-400">
+                            <img src="https://cdn.worldvectorlogo.com/logos/next-js.svg" alt="Next.js"
+                                class="tool-icon-img">
+                            <span>Next.js</span>
+                        </div>
+                        <div class="skill-card delay-500">
+                            <img src="https://www.vectorlogo.zone/logos/getpostman/getpostman-icon.svg" alt="Postman"
+                                class="tool-icon-img">
+                            <span>Postman API</span>
+                        </div>
+                        <div class="skill-card delay-600">
+                            <img src="https://www.vectorlogo.zone/logos/netlify/netlify-icon.svg" alt="Netlify"
+                                class="tool-icon-img">
+                            <span>Netlify</span>
+                        </div>
+                        <div class="skill-card delay-700">
+                            <img src="https://www.vectorlogo.zone/logos/figma/figma-icon.svg" alt="Figma"
+                                class="tool-icon-img figma-logo">
+                            <span>Figma</span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -183,36 +212,36 @@
     <!-- Education Section -->
     <section id="education" class="section">
         <div class="container">
-            <div class="section-header fade-in-up">
+            <div class="section-header">
                 <h2 class="section-title">Education</h2>
                 <p class="section-subtitle">My academic journey</p>
             </div>
             <div class="timeline">
-                <div class="timeline-item fade-in-up">
+                <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="date">2022 - Present</span>
                         <h3 class="degree">BE Computer Science and Engineering</h3>
                         <h4 class="institute">Saveetha Engineering College</h4>
-                        <p>CGPA: 7.9/10</p>
+                        <p>CGPA: <span class="grade-badge neon-green">7.9/10</span></p>
                     </div>
                 </div>
-                <div class="timeline-item fade-in-up">
+                <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="date">2020 - 2022</span>
                         <h3 class="degree">Higher Secondary Education</h3>
                         <h4 class="institute">Swami Dayananda Matric Hr.Sec School</h4>
-                        <p>Grade: 82%</p>
+                        <p>Grade: <span class="grade-badge neon-blue">82%</span></p>
                     </div>
                 </div>
-                <div class="timeline-item fade-in-up">
+                <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="date">Completed</span>
                         <h3 class="degree">Secondary Education</h3>
                         <h4 class="institute">Swami Dayananda Matric Hr.Sec School</h4>
-                        <p>Percentage: 83%</p>
+                        <p>Percentage: <span class="grade-badge neon-purple">83%</span></p>
                         <p>Built foundational academic skills and discipline during school-level education.</p>
                     </div>
                 </div>
@@ -223,13 +252,13 @@
     <!-- Projects Section -->
     <section id="projects" class="section bg-alt">
         <div class="container">
-            <div class="section-header fade-in-up">
+            <div class="section-header">
                 <h2 class="section-title">Projects</h2>
                 <p class="section-subtitle">Some of my recent work</p>
             </div>
             <div class="projects-grid">
                 <!-- Project 1 -->
-                <article class="project-card fade-in-up">
+                <article class="project-card">
                     <div class="project-image">
                         <img src="images/crop image.jpg" alt="Crop Disease Prediction">
                     </div>
@@ -238,20 +267,22 @@
                         <p class="project-desc">Developed a deep learning model using CNN to classify crop disease from
                             leaf images with over 90 percent accuracy.</p>
                         <div class="project-tech">
-                            <span>Python</span>
-                            <span>TensorFlow</span>
-                            <span>React</span>
-                            <span>CNN</span>
+                            <span class="tech-tag tech-python">Python</span>
+                            <span class="tech-tag tech-tf">TensorFlow</span>
+                            <span class="tech-tag tech-react">React</span>
+                            <span class="tech-tag tech-cnn">CNN</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                            <a href="#" target="_blank" class="live-demo"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Live
                                 Demo</a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Source</a>
+                            <a href="#" target="_blank" class="source-code"><i class="fa-brands fa-github"></i>
+                                Source</a>
                         </div>
                     </div>
                 </article>
                 <!-- Project 2 -->
-                <article class="project-card fade-in-up delay-100">
+                <article class="project-card delay-100">
                     <div class="project-image">
                         <img src="images/blog image.png" alt="Inscribe AI-Blogging application">
                     </div>
@@ -260,14 +291,64 @@
                         <p class="project-desc">Intelligent blogging platform developed an AI powered blogging platform
                             that generates, optimizes and personalises blog content.</p>
                         <div class="project-tech">
-                            <span>NLP</span>
-                            <span>Machine Learning</span>
-                            <span>React</span>
+                            <span class="tech-tag tech-nlp">NLP</span>
+                            <span class="tech-tag tech-ml">Machine Learning</span>
+                            <span class="tech-tag tech-react">React</span>
                         </div>
                         <div class="project-links">
-                            <a href="#" target="_blank"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                            <a href="#" target="_blank" class="live-demo"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Live
                                 Demo</a>
-                            <a href="#" target="_blank"><i class="fa-brands fa-github"></i> Source</a>
+                            <a href="#" target="_blank" class="source-code"><i class="fa-brands fa-github"></i>
+                                Source</a>
+                        </div>
+                    </div>
+
+                </article>
+                <!-- Project 3 -->
+                <article class="project-card delay-200">
+                    <div class="project-image">
+                        <img src="images/expemsee.jpg" alt="Expense Tracker">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Expense Tracker</h3>
+                        <p class="project-desc">An intuitive application to track income and expenses with visual
+                            insights and budget management features.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag tech-springboot">Spring Boot</span>
+                            <span class="tech-tag tech-rest">REST API</span>
+                            <span class="tech-tag tech-jwt">JWT</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://expense-tracker-zeta-pearl-57.vercel.app/" target="_blank"
+                                class="live-demo"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                                Demo</a>
+                            <a href="#" target="_blank" class="source-code"><i class="fa-brands fa-github"></i>
+                                Source</a>
+                        </div>
+                    </div>
+                </article>
+                <!-- Project 4 -->
+                <article class="project-card delay-300">
+                    <div class="project-image">
+                        <img src="images/to-doo.jpg" alt="Modern To-do-app">
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Modern To-do-app</h3>
+                        <p class="project-desc">A sleek and responsive task management app to organize daily
+                            activities efficiently with local storage integration.</p>
+                        <div class="project-tech">
+                            <span class="tech-tag tech-react">React</span>
+                            <span class="tech-tag tech-tailwind">Tailwind CSS</span>
+                            <span class="tech-tag tech-js">JavaScript</span>
+                        </div>
+                        <div class="project-links">
+                            <a href="https://todoapp-react-sanjeev.netlify.app/" target="_blank" class="live-demo"><i
+                                    class="fa-solid fa-arrow-up-right-from-square"></i> Live
+                                Demo</a>
+                            <a href="https://github.com/sanjeevraj0987/todo-react" target="_blank"
+                                class="source-code"><i class="fa-brands fa-github"></i>
+                                Source</a>
                         </div>
                     </div>
                 </article>
@@ -278,18 +359,18 @@
     <!-- Experience Section -->
     <section id="experience" class="section bg-alt">
         <div class="container">
-            <div class="section-header fade-in-up">
+            <div class="section-header">
                 <h2 class="section-title">Experience</h2>
                 <p class="section-subtitle">My professional journey</p>
             </div>
             <div class="timeline">
                 <!-- Reteck Solution -->
-                <div class="timeline-item fade-in-up">
+                <div class="timeline-item">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="date">1st - 15th Jan 2026</span>
                         <h3 class="degree">Full Stack Development (Java) - In-plant Training</h3>
-                        <h4 class="institute">Reteck Solution - Tambaram</h4>
+                        <h4 class="institute institute-neon neon-green">Reteck Solution - Tambaram</h4>
                         <ul
                             style="list-style-type: disc; margin-left: 1.5rem; color: var(--text-secondary); margin-top: 1rem;">
                             <li>Gained hands-on experience in full stack application development using Java technologies
@@ -301,12 +382,12 @@
                     </div>
                 </div>
                 <!-- Engineering monk -->
-                <div class="timeline-item fade-in-up delay-100">
+                <div class="timeline-item delay-100">
                     <div class="timeline-dot"></div>
                     <div class="timeline-content">
                         <span class="date">1st - 31st July 2024</span>
                         <h3 class="degree">Python for Data Analysis - Internship</h3>
-                        <h4 class="institute">Engineering monk - Avadi</h4>
+                        <h4 class="institute institute-neon neon-purple">Engineering monk - Avadi</h4>
                         <ul
                             style="list-style-type: disc; margin-left: 1.5rem; color: var(--text-secondary); margin-top: 1rem;">
                             <li>Gained hands-on experience in Python programming for data analysis and real-world
@@ -325,12 +406,12 @@
     <!-- Certifications Section -->
     <section id="certifications" class="section">
         <div class="container">
-            <div class="section-header fade-in-up">
+            <div class="section-header">
                 <h2 class="section-title">Certifications</h2>
                 <p class="section-subtitle">Professional milestones</p>
             </div>
             <div class="cert-grid">
-                <div class="cert-card fade-in-up">
+                <div class="cert-card">
                     <div class="cert-icon">
                         <i class="fa-solid fa-certificate"></i>
                     </div>
@@ -341,7 +422,7 @@
                             class="btn-small">View Certificate</a>
                     </div>
                 </div>
-                <div class="cert-card fade-in-up delay-100">
+                <div class="cert-card delay-100">
                     <div class="cert-icon">
                         <i class="fa-brands fa-google"></i>
                     </div>
@@ -352,7 +433,7 @@
                             class="btn-small">View Certificate</a>
                     </div>
                 </div>
-                <div class="cert-card fade-in-up delay-200">
+                <div class="cert-card delay-200">
                     <div class="cert-icon">
                         <i class="fa-brands fa-aws"></i>
                     </div>
@@ -363,7 +444,7 @@
                             class="btn-small">View Certificate</a>
                     </div>
                 </div>
-                <div class="cert-card fade-in-up delay-300">
+                <div class="cert-card delay-300">
                     <div class="cert-icon">
                         <i class="fa-solid fa-network-wired"></i>
                     </div>
@@ -379,61 +460,58 @@
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="section bg-alt">
+    <section id="contact" class="section bg-alt-gradient">
         <div class="container">
-            <div class="section-header fade-in-up">
-                <h2 class="section-title">Contact Me</h2>
-                <p class="section-subtitle">Let's work together</p>
+            <div class="section-header">
+                <h2 class="section-title">Get in Touch</h2>
+                <p class="section-subtitle">Have a project in mind or want to collaborate?</p>
             </div>
-            <div class="book-container fade-in-up">
-                <div class="book">
-                    <!-- Left Page: Contact Info -->
-                    <div class="book-page left-page">
-                        <div class="page-content">
-                            <h3>Get in Touch</h3>
-                            <p class="page-text">I'm always open to discussing new projects, creative ideas, or
-                                improvements to existing work.</p>
 
-                            <div class="book-contact-info">
-                                <div class="book-contact-item">
-                                    <i class="fa-solid fa-envelope"></i>
-                                    <span>sanjeevtamilselvan939@gmail.com</span>
-                                </div>
-                                <div class="book-contact-item">
-                                    <i class="fa-brands fa-linkedin"></i>
-                                    <a href="https://www.linkedin.com/in/sanjeev-raj-794293308/"
-                                        target="_blank">LinkedIn Profile</a>
-                                </div>
-                                <div class="book-contact-item">
-                                    <i class="fa-brands fa-github"></i>
-                                    <a href="https://github.com/sanjeevraj0987" target="_blank">GitHub Profile</a>
-                                </div>
-                            </div>
-
-                            <div class="book-decoration">
-                                <i class="fa-solid fa-feather-pointed"></i>
-                            </div>
-                        </div>
+            <div class="contact-wrapper">
+                <!-- Left Side: Quotes & Info -->
+                <div class="contact-quote-side">
+                    <div class="contact-quote">
+                        "The best way to predict the future is to create it."
+                        <span>— Peter Drucker</span>
+                    </div>
+                    <div class="contact-quote">
+                        "Design is not just what it looks like and feels like. Design is how it works."
+                        <span>— Steve Jobs</span>
                     </div>
 
-                    <!-- Right Page: Contact Form -->
-                    <div class="book-page right-page">
-                        <div class="page-content">
-                            <h3>Send a Message</h3>
-                            <form class="book-form">
-                                <div class="form-group-line">
-                                    <input type="text" placeholder="Your Name" required>
-                                </div>
-                                <div class="form-group-line">
-                                    <input type="email" placeholder="Your Email" required>
-                                </div>
-                                <div class="form-group-line">
-                                    <textarea placeholder="Write your query here..." rows="4" required></textarea>
-                                </div>
-                                <button type="submit" class="btn-book">Send Query</button>
-                            </form>
+                    <div class="contact-info-classy">
+                        <div class="contact-item-classy">
+                            <i class="fa-solid fa-envelope"></i>
+                            <span>sanjeevtamilselvan939@gmail.com</span>
+                        </div>
+                        <div class="contact-item-classy">
+                            <i class="fa-brands fa-linkedin"></i>
+                            <a href="https://www.linkedin.com/in/sanjeev-rajt/" target="_blank">LinkedIn Profile</a>
+                        </div>
+                        <div class="contact-item-classy">
+                            <i class="fa-brands fa-github"></i>
+                            <a href="https://github.com/sanjeevraj0987" target="_blank">GitHub Profile</a>
                         </div>
                     </div>
+                </div>
+
+                <!-- Right Side: Contact Form -->
+                <div class="contact-form-side">
+                    <form class="classy-form">
+                        <div class="classy-input-group">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="John Doe" required>
+                        </div>
+                        <div class="classy-input-group">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="john@example.com" required>
+                        </div>
+                        <div class="classy-input-group">
+                            <label>Message</label>
+                            <textarea placeholder="Tell me about your project..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-classy">Elevate Your Vision</button>
+                    </form>
                 </div>
             </div>
         </div>
@@ -441,8 +519,9 @@
 
     <!-- Footer -->
     <footer class="footer">
-        <div class="container">
-            <p>&copy; 2026 Sanjeev Raj T. All Rights Reserved.</p>
+        <div class="container" style="text-align: center;">
+            <p>Designed and coded with precision</p>
+            <p class="signature">@sans</p>
         </div>
     </footer>
 
